@@ -41,7 +41,7 @@ for fn in uploaded.keys():
 data_transform = transforms.Compose([
     transforms.Grayscale(),
     # Resize the images to 224*224
-    transforms.Resize(size=(224, 224)),
+    transforms.Resize(size=(324, 224)),
            # Turn the image into a torch.Tensor
     transforms.ToTensor() # this also converts all pixel values from 0 to 255 to be between 0.0 and 1.0
 ])
